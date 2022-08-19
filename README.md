@@ -1,6 +1,7 @@
 # Near-Chunk-Uptime-Check
 
-This script was created for Near Validators to check chunk uptimes and get alerts to telegram channels for certain threshold .
+This script was created for Near Validators to check chunk uptimes and get alerts to telegram channels for certain threshold.
+
 [About Telegram Bot ](https://core.telegram.org/bots)
 
 ### Create sh file 
@@ -10,13 +11,13 @@ Open your shell and create a script file with the below command.
 ```
 nano $HOME/uptime-alert.sh
 ```
-This site was built using [Telegram Bot ](https://pages.github.com/). https://core.telegram.org/bots
+
 Add the following script into this file.
 
 ```
 #!/bin/bash
 
-CURRENT=$(near validators current |grep gateomega | awk -F'|' '{ print $5}' | sed 's/%//g')
+CURRENT=$(near validators current |grep <VALIDATOR-NAME> | awk -F'|' '{ print $5}' | sed 's/%//g')
 THRESHOLD=90
 
 MESSAGE="Chunk Uptime Check: $CURRENT%"
@@ -37,7 +38,8 @@ date >> /home/<$USER>/uptimelogs/all.log
 echo $CURRENT >> /home/<$USER>/uptimelogs/all.log
 
 ```
-
+To save the file: CTRL + O and press Enter
+To exit from file: CTRL + X
 
 
 # Variables and Requirements
@@ -56,3 +58,7 @@ Example : bot5497182788:AAGXS-nArOMZaER_6xqfeOLW-VD-frlSfDM
 
 $USER
 Replace your with your user
+  
+$VALIDATOR-NAME
+Replace with your Near Validator name to grep.
+  

@@ -1,6 +1,6 @@
 # Chunk Production Alert Bot for Near Validators
 
-This script was created for Near Validators to check chunk uptimes and get alerts to telegram channels for certain threshold.
+This script was created for Near Validators to check chunk uptimes and get alerts to telegram channels for under certain threshold.
 
 ## Contents
 
@@ -62,11 +62,11 @@ $VALIDATOR-NAME.
 Replace with your Near Validator name to grep.   
 
 $YOUR-TELEGRAM-CHAT-ID - Please see [How to find Telegram Chat ID?](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md).     
-Replace <YOUR TELEGRAM CHAT ID> section with your channel ID with prefix -100  
+Replace <YOUR TELEGRAM CHAT ID> section with your channel ID (prefix -100)  
 Example : -1001567031322   
 
 $Telegram Bot ID - Please see [How to find Telegram Bot Toke?](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md).    
-Replace <YOUR-TELEGRAM-BOT-TOKEN> section with your bot ID with prefix bot.  
+Replace <YOUR-TELEGRAM-BOT-TOKEN> section with your bot token ID (prefix bot)  
 Example : bot5497182788:AAGXS-nArOMZaER_6xqfeOLW-VD-frlSfDM  
 
 ## 3. Creating Telegram Bot 
@@ -78,7 +78,36 @@ If you know your bot token and chat Id you can pass this section. Otherwise plea
 Run below command to make your script executable
 
 ```
-chmod + x $HOME/disk-space-check.sh
+chmod + x $HOME/uptime-alert.sh
 ```
+
 ## 5. Automation - Crontab
+  
+You may want to run this script hourly or in specific periods you need. So you need to create a cron job for it.   
+
+To check if cron is installed in your system, run the following command.
+```
+dpkg -l cron
+```
+If cron is not installed, install the cron package on Ubuntu:
+```
+apt-get install cron
+```
+Open the crontab file with the following command.
+```
+crontab -e
+```
+If you run this command for the first time in your system or server, you may have the following output. Then, choose 1 to continue.   
+
+![Crontab](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/images/crontab.png)  
+
+Add the following line to the end in the crontab file to run uptime-alert script in every 2 hours.  
+
+```  
+0 */2 * * * sh $HOME/./uptime-alert.sh
+```  
+To save the file: CTRL + O and press Enter.  
+To exit from file: CTRL + X.  
+
+To understand crontab timing strings check [CrontabGuru](https://crontab.guru)
 

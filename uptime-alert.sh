@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURRENT=$(near validators current |grep <VALIDATOR-NAME> | awk -F'|' '{ print $5}' | sed 's/%//g')
+CURRENT=$(near validators current |grep <VALIDATOR-NAME> | awk -F'|' '{ print $5}'  | sed 's/%//g')
 THRESHOLD=90
 
 MESSAGE="Chunk Uptime Check: $CURRENT%"

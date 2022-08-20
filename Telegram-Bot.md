@@ -15,7 +15,7 @@
   
 (Bot Token Example : 5497182788:AAGXS-nArOMZaER_6xqfeOLW-VD-frlSfDM)
 
-## How to create a channel in Telegram and add your bot?
+## How to create a channel in Telegram and adding your bot?
 
 - Create a new channel to get alerts. (1–2)
 - To add your newly created bot into your channel, click on the Subscribers and add subscribers. (3–4)
@@ -23,7 +23,7 @@
 
 ![Telegram Chat](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/images/telegramchatbot.png)
   
-## How to find your chat ID? (channel ID)
+## How to find your chat / channel ID ?
   
 We need a chat id to be able to get alerts from our server. Every chat room has an ID number attached to it. It doesn’t matter if it’s private or public.   
 - Firstly go to [Web Telegram](https://web.telegram.org). Open your channel. Look at the URL at the top of the screen.   

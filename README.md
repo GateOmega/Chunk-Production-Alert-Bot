@@ -45,11 +45,10 @@ echo $CURRENT >> /full-path-to/uptimelogs/all.log
 
 ```
 To save the file: CTRL + O and press Enter.  
-To exit from file: CTRL + X. 
-
+To exit from file: CTRL + X.  
+You can edit/change variables later.
 
 ## 2. Variables / Requirements
-
 
 $THRESHOLD VALUE.  
 Replace THRESHOLD value with the threshold value of your choice.   
@@ -63,7 +62,7 @@ Replace <YOUR TELEGRAM CHAT ID> section with your channel ID with prefix -100
 Example : -1001567031322   
 
 $Telegram Bot ID - Please see Creating Telegram Bot.   
-Replace <YOUR TELEGRAM BOT ID> section with your bot ID with prefix bot.  
+Replace <YOUR-TELEGRAM-BOT-TOKEN> section with your bot ID with prefix bot.  
 Example : bot5497182788:AAGXS-nArOMZaER_6xqfeOLW-VD-frlSfDM  
 
 ## 3. Creating Telegram Bot 
@@ -78,7 +77,7 @@ father Telegram App. It must have a blue tick on the right side. Click on botfat
 - The command you need is:   ```/newbot``` which leads to the steps to create your unique bot.   
 - Choose your bot name and username. Username must be unique and must end with “bot”.   
 - You will get a message that contains your access token. This is also your <telegram bot id> will be used in your script. Save your access token in a safe place. Don’t share it and don’t lose it.
-[Telegram Bot](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/images/telegramchatbot.png)
+![Telegram Bot](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/images/telegramchatbot.png)
 
 [About Telegram Bot ](https://core.telegram.org/bots)
 

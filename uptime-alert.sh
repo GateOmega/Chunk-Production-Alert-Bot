@@ -13,8 +13,6 @@ curl -X POST \
 https://api.telegram.org/<YOUR-TELEGRAM-BOT-TOKEN>/sendMessage
 fi
 
-#export NEAR_ENV=shardnet
-#export LOGS=/home/$USER/uptimelogs
 
 echo "---" >> /home/<$USER>/uptimelogs/all.log
 date >> /home/<$USER>/uptimelogs/all.log

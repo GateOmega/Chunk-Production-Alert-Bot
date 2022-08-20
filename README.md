@@ -5,9 +5,9 @@ This script was created for Near Validators to check chunk uptimes and get alert
 ## Contents
 
 1. Creating a Shell Script.
-2. Variables / Requirements
-3. Creating Telegram Bot 
-4. Adding variables to the script.
+2. Variables / Requirements.
+3. [Creating Telegram Bot](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md). 
+4. Make your script Executable
 5. Automation — Crontab.
 
 ## 1. Creating Shell Script
@@ -18,7 +18,7 @@ Open your shell and create a script file with the below command.
 nano $HOME/uptime-alert.sh
 ```
 
-Add the following script into this file.
+Add the following script into this file. [uptime-alert.sh](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/uptime-alert.sh)
 
 ```
 #!/bin/bash
@@ -44,9 +44,13 @@ date >> /full-path-to/uptimelogs/all.log
 echo $CURRENT >> /full-path-to/uptimelogs/all.log
 
 ```
+Create uptimelogs directory to see all chunk production history. If you need custom paths, edit your uptime-alert.sh. Update the log-file-location with the path to the log file.
+```
+mkdir $HOME/uptimelogs 
+```
 To save the file: CTRL + O and press Enter.  
 To exit from file: CTRL + X.  
-You can edit/change variables later.
+You can edit/change variables later if you like.
 
 ## 2. Variables / Requirements
 
@@ -57,27 +61,24 @@ THRESHOLD=90 (the threshold value of your choice).
 $VALIDATOR-NAME.  
 Replace with your Near Validator name to grep.   
 
-$YOUR-TELEGRAM-CHAT-ID - Please see [How to find Telegram Chat ID](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md).     
+$YOUR-TELEGRAM-CHAT-ID - Please see [How to find Telegram Chat ID?](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md).     
 Replace <YOUR TELEGRAM CHAT ID> section with your channel ID with prefix -100  
 Example : -1001567031322   
 
-$Telegram Bot ID - Please see Creating Telegram Bot.   
+$Telegram Bot ID - Please see [How to find Telegram Bot Toke?](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md).    
 Replace <YOUR-TELEGRAM-BOT-TOKEN> section with your bot ID with prefix bot.  
 Example : bot5497182788:AAGXS-nArOMZaER_6xqfeOLW-VD-frlSfDM  
 
 ## 3. Creating Telegram Bot 
 
-1. Create a bot using Telegram App.
-2. Create a channel in Telegram and make your bot admin.
-3. Finding your group/channel id.   
+If you know your bot token and chat Id you can pass this section. Otherwise please see [Creating Telegram Bot](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md)
 
-#### How to create a bot using Telegram App?
-- Search for bot!
-father Telegram App. It must have a blue tick on the right side. Click on botfather.     
-- The command you need is:   ```/newbot``` which leads to the steps to create your unique bot.   
-- Choose your bot name and username. Username must be unique and must end with “bot”.   
-- You will get a message that contains your access token. This is also your <telegram bot id> will be used in your script. Save your access token in a safe place. Don’t share it and don’t lose it.
-![Telegram Bot Token](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/images/telegrambottoken.png)
+## 4. Make your Script Executable
 
-[About Telegram Bot ](https://core.telegram.org/bots)
+Run below command to make your script executable
+
+```
+chmod + x $HOME/disk-space-check.sh
+```
+## 5. Automation - Crontab
 

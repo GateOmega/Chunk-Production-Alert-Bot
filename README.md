@@ -41,13 +41,14 @@ date >> /full-path-to/uptimelogs/all.log
 echo $CURRENT >> /full-path-to/uptimelogs/all.log
 
 ```
+To save the file: CTRL + O and press Enter.  
+To exit from file: CTRL + X.  
+You can edit/change variables later if you like.
+
 Create uptimelogs directory to see all chunk production history. If you need custom paths, edit your uptime-alert.sh. Update the log-file-location with the path to the log file.
 ```
 mkdir $HOME/uptimelogs 
 ```
-To save the file: CTRL + O and press Enter.  
-To exit from file: CTRL + X.  
-You can edit/change variables later if you like.
 
 ## 2. Variables / Requirements
 

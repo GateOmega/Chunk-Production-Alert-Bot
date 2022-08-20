@@ -77,7 +77,7 @@ father Telegram App. It must have a blue tick on the right side. Click on botfat
 - The command you need is:   ```/newbot``` which leads to the steps to create your unique bot.   
 - Choose your bot name and username. Username must be unique and must end with “bot”.   
 - You will get a message that contains your access token. This is also your <telegram bot id> will be used in your script. Save your access token in a safe place. Don’t share it and don’t lose it.
-![Telegram Bot](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/images/telegramchatbot.png)
+![Telegram Bot Token](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/images/telegrambottoken.png)
 
 [About Telegram Bot ](https://core.telegram.org/bots)
 

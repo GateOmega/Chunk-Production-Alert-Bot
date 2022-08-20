@@ -59,11 +59,11 @@ THRESHOLD=90 (the threshold value of your choice).
 $VALIDATOR-NAME.  
 Replace with your Near Validator name to grep.   
 
-$YOUR-TELEGRAM-CHAT-ID - Please see [How to find Telegram Chat ID?](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md).     
+$YOUR-TELEGRAM-CHAT-ID - Please see [How to find Telegram Chat ID?](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md)     
 Replace <YOUR TELEGRAM CHAT ID> section with your channel ID (prefix -100)  
 Example : -1001567031322   
 
-$Telegram Bot ID - Please see [How to find Telegram Bot Toke?](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md).    
+$Telegram Bot ID - Please see [How to find Telegram Bot Token?](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md)    
 Replace <YOUR-TELEGRAM-BOT-TOKEN> section with your bot token ID (prefix bot)  
 Example : bot5497182788:AAGXS-nArOMZaER_6xqfeOLW-VD-frlSfDM  
 

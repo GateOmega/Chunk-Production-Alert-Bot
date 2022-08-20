@@ -83,6 +83,7 @@ chmod + x $HOME/uptime-alert.sh
 ## 5. Testing Script and Outputs
 
 After making your script executable try below command if the script works and sends alerts your telegram channel.   
+Before testing make $THRESHOLD value 100.  
 
 ```
 ./uptime-alert.sh

@@ -8,7 +8,8 @@ This script was created for Near Validators to check chunk uptimes and get alert
 2. Variables / Requirements.
 3. [Creating Telegram Bot](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/Telegram-Bot.md). 
 4. Make your script Executable
-5. Automation — Crontab.
+5. Testing Script and Outputs
+6. Automation — Crontab.
 
 ## 1. Creating Shell Script
 
@@ -79,8 +80,25 @@ Run below command to make your script executable
 chmod + x $HOME/uptime-alert.sh
 ```
 
-## 5. Automation - Crontab
-  
+## 5. Testing Script and Outputs
+
+After making your script executable try below command if the script works and sends alerts your telegram channel.   
+
+```
+./uptime-alert.sh
+```
+You will be seeing output like these:   
+
+Shell Output:   
+```
+{"ok":true,"result":{"message_id":299488,"sender_chat":{"id":-1001567031322,"title":"Server-Alerts-GateOmega","type":"channel"},"chat":{"id":-1001567031322,"title":"Server-Alerts-GateOmega","type":"channel"},"date":1661013688,"text":"Chunk Uptime Check:  95      %"}}
+```
+Telegram messages like:   
+
+![Telegram_alerts](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/images/telegram_alerts.png)
+
+## 6. Automation - Crontab
+
 You may want to run this script hourly or in specific periods you need. So you need to create a cron job for it.   
 
 To check if cron is installed in your system, run the following command.
@@ -108,4 +126,3 @@ To save the file: CTRL + O and press Enter.
 To exit from file: CTRL + X.  
 
 To understand crontab timing strings check [CrontabGuru](https://crontab.guru)
-

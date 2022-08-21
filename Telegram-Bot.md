@@ -1,7 +1,7 @@
 # Creating Telegram Bot
 
-1. Create a bot using [Telegram](https://www.telegram.org).
-2. Create a channel in Telegram and make your bot admin.***Finding your bot token.***
+1. Create a bot using [Telegram](https://www.telegram.org). ***Finding your bot token.***  
+2. Create a channel in Telegram and make your bot admin.
 3. Finding your ***group/channel*** id.   
 
 ## How to create a bot using Telegram App?
@@ -19,7 +19,7 @@
 
 - Create a new channel to get alerts. (1–2)
 - To add your newly created bot into your channel, click on the Subscribers and add subscribers. (3–4)
-- Search for your bot with “username” that you chosen for it and make it admin. (5–6)
+- Search for your bot with “username” and make it admin. (5–6)
 
 ![Telegram Chat](https://github.com/GateOmega/Chunk-Production-Alert-Bot/blob/main/images/telegramchatbot.png)
   
@@ -28,7 +28,8 @@
 We need a chat id to be able to get alerts from our server. Every chat room has an ID number attached to it. It doesn’t matter if it’s private or public.   
 - Firstly go to [Web Telegram](https://web.telegram.org). Open your channel. Look at the URL at the top of the screen.   
 - You will see url like that : https://web.telegram.org/z/#-1567031322  
-- The number after the # is actually your chat ID. 1567031322
+- The number after the # is actually your chat ID. 1567031322  
+- You need to add -100 as prefix to use it in script -1001567031322
  
 
   
